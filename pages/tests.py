@@ -25,4 +25,4 @@ class TestPages(TestCase):
 
     def test_name_page_on_aboutus_page_view(self):
         response = self.client.get(reverse('aboutus'))
-        self.assertContains(response, 'jh')
+        self.assertContains(response, 'About Us')
