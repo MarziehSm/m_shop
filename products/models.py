@@ -5,7 +5,7 @@ from django.utils.translation import gettext_lazy as _
 
 
 class Product(models.Model):
-    title = models.CharField(max_length=100)
+    title = models.CharField(max_length=100, verbose_name=_('name'))
     description = models.TextField()
     price = models.PositiveIntegerField(default=0)
     active = models.BooleanField(default=True)

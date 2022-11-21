@@ -26,6 +26,7 @@
     <!-- style css -->
     <link rel="stylesheet" href="{% static "css/main.css" %}">
 </head>
+
 <body dir="rtl">
 {#    {% if user.is_authenticated %}#}
 {#    <span>Welcome {{ user.username }}</span> | <a href="{% url 'account_logout' %}">Logout</a>#}
@@ -127,6 +128,18 @@
     </header>
 </div>
 <!-- Header End -->
+
+<div class="container">
+    {% if messages %}
+        {% for message in messages %}
+            <div class="alert alert-{{ message.tags }}">
+                {{ message }}
+            </div>
+        {% endfor %}
+
+    {% endif %}
+</div>
+
 
 {% block content %}
 {% endblock content %}
