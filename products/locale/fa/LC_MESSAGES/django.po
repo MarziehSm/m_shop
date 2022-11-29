@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-20 22:05+0330\n"
+"POT-Creation-Date: 2022-11-27 21:56+0330\n"
 "PO-Revision-Date: 2022-11-20 22:06+0330\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -55,22 +55,33 @@ msgid "Your Score"
 msgstr "امتیاز شما به این محصول"
 
 #: .\templates\products\product_detail.html:17
-#: .\templates\products\product_detail.html:75
+#: .\templates\products\product_detail.html:78
 msgid "Product Description"
 msgstr "جزئیات محصول"
 
-#: .\templates\products\product_detail.html:83
+#: .\templates\products\product_detail.html:86
 msgid "comments"
 msgstr "نظرات"
 
-#: .\templates\products\product_detail.html:160
+#: .\templates\products\product_detail.html:164
+msgid "for leave a comment please "
+msgstr "برای نوشتن کامنت"
+
+#: .\templates\products\product_detail.html:165
+msgid "Login"
+msgstr "ورود"
+
+#: .\templates\products\product_detail.html:168
 msgid "Write Your Comment:"
 msgstr "نظر خود را بنویسید:"
 
-#: .\templates\products\product_detail.html:165
+#: .\templates\products\product_detail.html:173
 msgid "Submit"
 msgstr "ارسال"
 
-#: .\views.py:12
-msgid "Hello"
-msgstr "سلام"
+#: .\views.py:45
+msgid "Your comment added successfully."
+msgstr "کامنت شما با موفقیت اضافه شد"
+
+#~ msgid "Hello"
+#~ msgstr "سلام"
