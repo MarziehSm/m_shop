@@ -4,6 +4,8 @@
 {% load i18n %}
 {% load crispy_forms_tags %}
 {% load comment_tags %}
+{% load persian_translation_tags %}
+{% load humanize %}
 
 {% block page_title %}سبد خرید{% endblock page_title %}
 
@@ -46,7 +48,7 @@
                                                 </td>
                                                 <td class="product-price">
                                                     <span class="product-price-wrapper">
-                                                        <span class="money">{{ item.product_obj.price }} تومان</span>
+                                                        <span class="money">{{ item.product_obj.price|intcomma:False|translate_number }} تومان</span>
                                                     </span>
                                                 </td>
                                                 <td class="product-quantity">
@@ -62,7 +64,7 @@
                                                 </td>
                                                 <td class="product-total-price">
                                                     <span class="product-price-wrapper">
-                                                        <span class="money">{{ item.total_price }} تومان</span>
+                                                        <span class="money">{{ item.total_price|intcomma:False|translate_number }} تومان</span>
                                                     </span>
                                                 </td>
                                             </tr>
@@ -101,7 +103,7 @@
                                         </div>
                                         <div class="cart-calculator__item--value">
                                             <span class="product-price-wrapper">
-                                                <span class="money">{{ cart.get_total_price }} تومان</span>
+                                                <span class="money">{{ cart.get_total_price|intcomma:False|translate_number }} تومان</span>
                                             </span>
                                         </div>
                                     </div>
